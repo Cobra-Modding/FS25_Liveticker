@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<modDesc descVersion="111">
+    <author>Marcus</author>
+    <version>1.0.0.0</version>
+
+    <title>
+        <en>Liveticker</en>
+        <de>Liveticker</de>
+    </title>
+
+    <description>
+        <en><![CDATA[
+Liveticker redirects supported Farming Simulator 25 HUD notifications
+into a central ticker at the top of the screen.
+
+Features:
+- Central LS25-style HUD ticker
+- Vanilla FS25 notifications redirected into the ticker
+- Original redirected notifications hidden
+- Scrolling text for all messages
+- Message queue and duplicate protection]]></en>
+
+        <de><![CDATA[
+Liveticker leitet unterstützte LS25-HUD-Meldungen in einen zentralen
+Ticker am oberen Bildschirmrand um.
+
+Funktionen:
+- Zentraler Ticker im LS25-HUD-Stil
+- LS25-Ingame-Meldungen werden in den Ticker umgeleitet
+- Übernommene Originalmeldungen werden ausgeblendet
+- Laufschrift für alle Meldungen
+- Meldungswarteschlange und Duplikat-Schutz]]></de>
+    </description>
+
+    <iconFilename>icon_liveticker.dds</iconFilename>
+	
+    <multiplayer supported="true"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/LivetickerStorage.lua"/>
+        <sourceFile filename="scripts/LivetickerSystem.lua"/>
+        <sourceFile filename="scripts/LivetickerVanillaBridge.lua"/>
+        <sourceFile filename="scripts/LivetickerSettings.lua"/>
+        <sourceFile filename="scripts/LivetickerIntegrations.lua"/>
+    </extraSourceFiles>
+	
+</modDesc>
